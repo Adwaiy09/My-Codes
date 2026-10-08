@@ -40,7 +40,6 @@ void Customer::deposit()
         }
     }
 }
-// one single amount is being transferred to every account , thats why im getting the same amount in every account
 
 int Customer::totalAccounts()
 {

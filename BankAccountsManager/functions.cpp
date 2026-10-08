@@ -20,8 +20,6 @@ void functions()
         manager->addCustomer(vec[i]);
     }
 
-    std::cout << "Enter choice --> ";
-
     for (int i = 0; i < vec.size(); i++)
     {
         int accCount = 0;
