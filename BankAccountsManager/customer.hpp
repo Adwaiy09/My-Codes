@@ -12,6 +12,7 @@ private:
     std::vector<Account *> accounts;
 
 public:
+    ~Customer();
     const std::string getName();
     void inputs();
     void addAccounts(Account *a);

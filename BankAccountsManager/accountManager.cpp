@@ -2,6 +2,14 @@
 #include <iostream>
 #include <string>
 
+accountManager::~accountManager()
+{
+    for (auto customer : customers)
+    {
+        delete customer;
+    }
+}
+
 void accountManager::addCustomer(Customer *c)
 {
     customers.push_back(c);

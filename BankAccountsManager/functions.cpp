@@ -45,4 +45,5 @@ void functions()
 
     manager->customerDeposit();
     manager->showCustomerInfo();
+    delete manager;
 }

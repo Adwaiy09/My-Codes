@@ -7,6 +7,7 @@ protected:
     double balance = 0;
 
 public:
+    virtual ~Account() {}
     Account(std::string type);
     virtual void accDetails();
     virtual std::string getType() = 0;
@@ -19,6 +20,7 @@ private:
     double interestRate = 0.04;
 
 public:
+    virtual ~SavingAccount() {}
     using Account::Account;
     void accDetails() override;
     std::string getType() override;
@@ -28,6 +30,7 @@ public:
 class CurrentAccount : public Account
 {
 public:
+    virtual ~CurrentAccount() {}
     using Account::Account;
     void accDetails() override;
     std::string getType() override;

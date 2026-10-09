@@ -2,6 +2,14 @@
 #include <iostream>
 #include <string>
 
+Customer::~Customer()
+{
+    for (auto account : accounts)
+    {
+        delete account;
+    }
+}
+
 void Customer::inputs()
 {
     std::cout << "Enter your Name: ";
